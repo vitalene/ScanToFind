@@ -1,0 +1,6 @@
+framework module Pods_ScanToFind {
+  umbrella header "Pods-ScanToFind-umbrella.h"
+
+  export *
+  module * { export * }
+}

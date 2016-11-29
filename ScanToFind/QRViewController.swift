@@ -7,3 +7,16 @@
 //
 
 import Foundation
+import AVFoundation
+
+class QRViewController: ViewController, AVCaptureMetadataOutputObjectsDelegate {
+    
+    
+    var captureSession:AVCaptureSession?
+    var videoPreviewLayer:AVCaptureVideoPreviewLayer?
+    var qrCodeFrameView:UIView?
+    
+    
+}
+
+

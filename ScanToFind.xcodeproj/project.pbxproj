@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		283206751DEAABC000CD27C4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 283206741DEAABC000CD27C4 /* MapKit.framework */; };
 		28E6A29B1DE9D48500431DDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6A29A1DE9D48500431DDA /* AppDelegate.swift */; };
 		28E6A29D1DE9D48600431DDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6A29C1DE9D48600431DDA /* ViewController.swift */; };
 		28E6A2A01DE9D48600431DDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28E6A29E1DE9D48600431DDA /* Main.storyboard */; };
 		28E6A2A21DE9D48600431DDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28E6A2A11DE9D48600431DDA /* Assets.xcassets */; };
 		28E6A2A51DE9D48600431DDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28E6A2A31DE9D48600431DDA /* LaunchScreen.storyboard */; };
+		28E6A2AD1DE9D76400431DDA /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6A2AC1DE9D76400431DDA /* QRViewController.swift */; };
+		E34083961C6C5CE5B3CBAD10 /* Pods_ScanToFind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98E93052B19AC2A85AF1581A /* Pods_ScanToFind.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		283206741DEAABC000CD27C4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		28E6A2971DE9D48500431DDA /* ScanToFind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanToFind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28E6A29A1DE9D48500431DDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28E6A29C1DE9D48600431DDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,10 @@
 		28E6A2A11DE9D48600431DDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28E6A2A41DE9D48600431DDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28E6A2A61DE9D48600431DDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28E6A2AC1DE9D76400431DDA /* QRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
+		98E93052B19AC2A85AF1581A /* Pods_ScanToFind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScanToFind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D67550667BB980417AA2D40F /* Pods-ScanToFind.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanToFind.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScanToFind/Pods-ScanToFind.debug.xcconfig"; sourceTree = "<group>"; };
+		F23C656669B34445CF1A5533 /* Pods-ScanToFind.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanToFind.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScanToFind/Pods-ScanToFind.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				283206751DEAABC000CD27C4 /* MapKit.framework in Frameworks */,
+				E34083961C6C5CE5B3CBAD10 /* Pods_ScanToFind.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03F01AD34AA5E73C38150473 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D67550667BB980417AA2D40F /* Pods-ScanToFind.debug.xcconfig */,
+				F23C656669B34445CF1A5533 /* Pods-ScanToFind.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		28E6A28E1DE9D48500431DDA = {
 			isa = PBXGroup;
 			children = (
 				28E6A2991DE9D48500431DDA /* ScanToFind */,
 				28E6A2981DE9D48500431DDA /* Products */,
+				03F01AD34AA5E73C38150473 /* Pods */,
+				7CFB8AC597C363690BA351A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +77,22 @@
 			children = (
 				28E6A29A1DE9D48500431DDA /* AppDelegate.swift */,
 				28E6A29C1DE9D48600431DDA /* ViewController.swift */,
+				28E6A2AC1DE9D76400431DDA /* QRViewController.swift */,
 				28E6A29E1DE9D48600431DDA /* Main.storyboard */,
 				28E6A2A11DE9D48600431DDA /* Assets.xcassets */,
 				28E6A2A31DE9D48600431DDA /* LaunchScreen.storyboard */,
 				28E6A2A61DE9D48600431DDA /* Info.plist */,
 			);
 			path = ScanToFind;
+			sourceTree = "<group>";
+		};
+		7CFB8AC597C363690BA351A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				283206741DEAABC000CD27C4 /* MapKit.framework */,
+				98E93052B19AC2A85AF1581A /* Pods_ScanToFind.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28E6A2A91DE9D48600431DDA /* Build configuration list for PBXNativeTarget "ScanToFind" */;
 			buildPhases = (
+				9A455C01F05D70554CD5EA32 /* [CP] Check Pods Manifest.lock */,
 				28E6A2931DE9D48500431DDA /* Sources */,
 				28E6A2941DE9D48500431DDA /* Frameworks */,
 				28E6A2951DE9D48500431DDA /* Resources */,
+				FBD321D3D1A3F14203C6BE00 /* [CP] Embed Pods Frameworks */,
+				467582FB4059791264C78B39 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,6 +131,11 @@
 					28E6A2961DE9D48500431DDA = {
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -131,6 +170,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		467582FB4059791264C78B39 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScanToFind/Pods-ScanToFind-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A455C01F05D70554CD5EA32 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FBD321D3D1A3F14203C6BE00 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScanToFind/Pods-ScanToFind-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		28E6A2931DE9D48500431DDA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -138,6 +225,7 @@
 			files = (
 				28E6A29D1DE9D48600431DDA /* ViewController.swift in Sources */,
 				28E6A29B1DE9D48500431DDA /* AppDelegate.swift in Sources */,
+				28E6A2AD1DE9D76400431DDA /* QRViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +346,7 @@
 		};
 		28E6A2AA1DE9D48600431DDA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D67550667BB980417AA2D40F /* Pods-ScanToFind.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ScanToFind/Info.plist;
@@ -270,6 +359,7 @@
 		};
 		28E6A2AB1DE9D48600431DDA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F23C656669B34445CF1A5533 /* Pods-ScanToFind.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ScanToFind/Info.plist;
@@ -299,6 +389,7 @@
 				28E6A2AB1DE9D48600431DDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
